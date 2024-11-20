@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlevqw21lkvcl"]
+
+[ext_resource type="PackedScene" uid="uid://blx1nuw8jpybt" path="res://map/prefabs/ground/models.blend" id="1_tggmb"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_gt1qo"]
+points = PackedVector3Array(0.743645, 2.33171, -0.368925, -0.982308, 0.0208056, -0.998008, -0.990476, 0.0119449, 1, 0.99775, 0.033583, 0.980052, -0.990476, 2.38805, 1, -0.981756, 2.26807, -1.18176, 1.16117, 2.31203, 0.998427, 0.291403, 0.113702, -0.519297, 0.123683, 1.99997, -1.0283, 1.0761, 1.99997, 2.60994e-05, 0.827067, 0.0722996, 0.204145, 1.22857, 1.99997, 1.02857, -0.392254, 2.37839, -1.03397, -1.01905, 1.99997, -1.21905, 0.809453, 1.99997, -0.456934, 1.05021, 2.38654, 0.998608, -0.523648, 0.0508427, -0.938925, -0.333277, 1.99997, -1.18077, 1.19029, 1.99997, 0.342581, -0.983519, 2.38051, -1.07273, 0.893934, 2.37483, -0.0403226, -0.0864655, 0.0870081, -0.773171, 0.466458, 1.99997, -0.799709, 0.604954, 0.0958154, -0.181327, 0.956154, 0.0403482, 0.611325, 0.12266, 2.28091, -0.94186, 1.11169, 2.29846, 0.325637, -0.599929, 1.99997, -1.21905, 0.9617, 1.99997, -0.228564, 1.22857, 1.99997, 0.685576, 0.343405, 2.37537, -0.701072, -0.277439, 2.29249, -1.09649)
+
+[node name="models" instance=ExtResource("1_tggmb")]
+
+[node name="Cube" parent="." index="0"]
+visible = false
+
+[node name="Cube_002" parent="." index="1"]
+visible = false
+
+[node name="Cube_003" parent="." index="2"]
+visible = false
+
+[node name="Cube_001" parent="." index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="4"]
+shape = SubResource("ConvexPolygonShape3D_gt1qo")
