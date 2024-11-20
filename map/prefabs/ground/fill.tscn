@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://6cduo5hh4wgu"]
+
+[ext_resource type="PackedScene" uid="uid://blx1nuw8jpybt" path="res://map/prefabs/ground/models.blend" id="1_o1e6r"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_pcbxm"]
+points = PackedVector3Array(1, 2.3739, 1, -1, 0.00352722, -1, 1, 0.026102, -0.980953, -1, 2.39647, -1, -0.980953, 0.026102, 1, 1, 0.026102, 1, 1, 2.3739, -0.980953, -0.980953, 2.3739, 1)
+
+[node name="models" instance=ExtResource("1_o1e6r")]
+
+[node name="Cube" parent="." index="0"]
+visible = false
+
+[node name="Cube_002" parent="." index="1"]
+visible = false
+
+[node name="Cube_003" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3"]
+shape = SubResource("ConvexPolygonShape3D_pcbxm")
+
+[node name="Cube_001" parent="." index="4"]
+visible = false
